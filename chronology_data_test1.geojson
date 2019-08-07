@@ -1,0 +1,46 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.2621,32.2227 ]
+    },
+    "properties": {
+    "date": 7/8/2019,
+    "child_arrest":1,
+    "home_demolition":"0",
+    "settler_attack":"0"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.2137,31.7683 ]
+    },
+    "properties": {
+    "date":"7/8/2019",
+    "child_arrest":3,
+    "home_demolition":"2",
+    "settler_attack":"0"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.0998,31.5326 ]
+    },
+    "properties": {
+    "date":"7/8/2019",
+    "child_arrest": 5,
+    "home_demolition":"0",
+    "settler_attack":"1"
+    }
+  }
+
+
+]
+}

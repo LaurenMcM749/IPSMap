@@ -1,0 +1,104 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.2621,32.2227 ]
+    },
+    "properties": {
+    "event":"child_arrest",
+    "date":"7/8/2019"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.2137,31.7683 ]
+    },
+    "properties": {
+    "event":"child_arrest",
+    "date":"7/9/2019"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.4,31.7683 ]
+    },
+    "properties": {
+    "event":"child_arrest",
+    "date":"7/10/2019"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.0998,31.5326 ]
+    },
+    "properties": {
+    "event":"home_demolition",
+    "date":"7/8/2019"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.2137,31.7683 ]
+    },
+    "properties": {
+    "event":"home_demolition",
+    "date":"7/9/2019"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.2621,32.2227 ]
+    },
+    "properties": {
+    "event":"home_demolition",
+    "date":"7/10/2019"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.2621,32.3227 ]
+    },
+    "properties": {
+    "event":"settler_attack",
+    "date":"7/8/2019"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.2137,31.9683 ]
+    },
+    "properties": {
+    "event":"settler_attack",
+    "date":"7/9/2019"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.4,31.2683 ]
+    },
+    "properties": {
+    "event":"settler_attack",
+    "date":"7/10/2019"
+    }
+  }
+]
+}

@@ -1,0 +1,195 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.2621,32.2227 ]
+    },
+    "properties": {
+    "date":"7/8/2019",
+    "arrest_adult":"1",
+    "arrest_child":0,
+    "death_adult":0,
+    "death_child":0,
+    "settlement_new":0,
+    "demolition":0,
+    "settler_violence_agri":0,
+    "settler_violence_prop":0,
+    "settler_violence_phys":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.2137,31.7683 ]
+    },
+    "properties": {
+    "date":"7/8/2019",
+    "arrest_adult":"0",
+    "arrest_child":2,
+    "death_adult":0,
+    "death_child":0,
+    "settlement_new":0,
+    "demolition":0,
+    "settler_violence_agri":0,
+    "settler_violence_prop":0,
+    "settler_violence_phys":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.0998,31.5326 ]
+    },
+    "properties": {
+    "date":"7/8/2019",
+    "arrest_adult":"0",
+    "arrest_child":0,
+    "death_adult":3,
+    "death_child":0,
+    "settlement_new":0,
+    "demolition":0,
+    "settler_violence_agri":0,
+    "settler_violence_prop":0,
+    "settler_violence_phys":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.2721,32.2235 ]
+    },
+    "properties": {
+    "date":"7/9/2019",
+    "arrest_adult":"0",
+    "arrest_child":0,
+    "death_adult":0,
+    "death_child":4,
+    "settlement_new":0,
+    "demolition":0,
+    "settler_violence_agri":0,
+    "settler_violence_prop":0,
+    "settler_violence_phys":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.2237,31.7653 ]
+    },
+    "properties": {
+    "date":"7/9/2019",
+    "arrest_adult":"0",
+    "arrest_child":0,
+    "death_adult":0,
+    "death_child":0,
+    "settlement_new":5,
+    "demolition":0,
+    "settler_violence_agri":0,
+    "settler_violence_prop":0,
+    "settler_violence_phys":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.0999,31.5327 ]
+    },
+    "properties": {
+    "date":"7/9/2019",
+    "arrest_adult":"0",
+    "arrest_child":0,
+    "death_adult":0,
+    "death_child":0,
+    "settlement_new":0,
+    "demolition":6,
+    "settler_violence_agri":0,
+    "settler_violence_prop":0,
+    "settler_violence_phys":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.2771,32.2435 ]
+    },
+    "properties": {
+    "date":"7/10/2019",
+    "arrest_adult":"0",
+    "arrest_child":0,
+    "death_adult":0,
+    "death_child":0,
+    "settlement_new":0,
+    "demolition":0,
+    "settler_violence_agri":5,
+    "settler_violence_prop":0,
+    "settler_violence_phys":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.2135,31.7684 ]
+    },
+    "properties": {
+    "date":"7/10/2019",
+    "arrest_adult":"0",
+    "arrest_child":0,
+    "death_adult":0,
+    "death_child":0,
+    "settlement_new":0,
+    "demolition":0,
+    "settler_violence_agri":0,
+    "settler_violence_prop":4,
+    "settler_violence_phys":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.0996,31.6326 ]
+    },
+    "properties": {
+    "date":"7/10/2019",
+    "arrest_adult":"0",
+    "arrest_child":0,
+    "death_adult":0,
+    "death_child":0,
+    "settlement_new":0,
+    "demolition":0,
+    "settler_violence_agri":0,
+    "settler_violence_prop":0,
+    "settler_violence_phys":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.2147,31.7693 ]
+    },
+    "properties": {
+    "date":"7/10/2019",
+    "arrest_adult":"0",
+    "arrest_child":0,
+    "death_adult":0,
+    "death_child":0,
+    "settlement_new":0,
+    "demolition":0,
+    "settler_violence_agri":0,
+    "settler_violence_prop":0,
+    "settler_violence_phys":0
+    }
+  }
+]
+}

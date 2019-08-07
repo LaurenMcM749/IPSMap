@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset='utf-8' />
+    <title>Chronology Data</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no'/>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://d3js.org/d3.v5.js"></script>
+
+    <style>
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family:"avenir next", Arial, sans-serif;
+  font-size: 12px;
+  color: #696969;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0px;
+  width: 45%;
+  height: 90%;
+  left: 300px;
+  margin: 10px;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+h2 {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #2dc4b2;
+}
+
+#console {
+  position: absolute;
+  height: 50px;
+  width: 600px;
+  top: 310px;
+  left: -100px;
+  margin: 10px;
+  padding: 10px 25px;
+  background-color: white;
+  border-style: solid;
+  transform: rotate(270deg);
+}
+
+#slider {
+-webkit-appearance: none;
+  width:625px;
+  position: absolute;
+  right: -5px;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  padding: 0px;
+  margin: 18px;
+  }
+
+  #slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+#slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+
+#console-2 {
+position: absolute;
+left: 25px;
+top: 50px;
+width: 100px;
+border-style: solid;
+padding: 20px;
+text-align: center;
+}
+
+#active-date {
+font-size: 18px;
+}
+
+
+
+}
+
+</style>
+</head>
+<body>
+
+<div id='map'></div>
+
+<div id='console'>
+    <input id='slider' class='row'  type='range' min='1' max='3' step='1' value='3'>
+</div>
+<div id="console-2">
+    <h2><label id='active-date'>All Data</label></h2>
+</div>
+
+
+
+<!--make min date and max date = today-->
+
+<script>
+
+mapboxgl.accessToken =
+'pk.eyJ1IjoibGF1cmVubWNtNzQ5IiwiYSI6ImNqeGRkM3h3MjBjdXIzc21tajZmZHM5d3kifQ.tAk1Dxbeo2gGoMHtQtXQuA';
+
+var map = new mapboxgl.Map({
+  container: 'map', // container element id
+  style: 'mapbox://styles/laurenmcm749/cjxkolgqw05691cnzeux77msh',
+  center:[34.860633, 31.903533],
+  zoom: 8
+});
+
+map.on('load', function () {
+map.addLayer( {
+    'id': 'event',
+    'type': 'circle',
+    'source':
+    {
+    <!--type:'geojson',-->
+    <!--url: './chron2.geojson',-->
+    type: 'vector',
+    url: 'mapbox://laurenmcm749.7e2zj3oa'
+    },
+
+'source-layer': 'chron2_-_Sheet1_1-7k1xxa',
+
+paint: {
+      'circle-radius':
+      [
+        'interpolate',
+        ['linear'],
+        ['number', ['get', 'num']],
+        0, 8,
+        5, 8,
+       ],
+      'circle-opacity': 0.8,
+      'circle-color':
+      [
+      'match',
+      ['get','event'],
+      'arrest_adult', '#d65e5e',
+      'arrest_child', '#d9985f',
+      'death_adult', '#e0d055',
+      'death_child', '#70a324',
+      'settlement_new', '#26a659',
+      'demolition', '#9f28a8',
+      'settler_violence_agri', '#29aba7',
+      'settler_violence_prop', '#2970ad',
+      'settler_violence_phys', '#2a3cb0',
+      'pink',
+      ],
+},
+
+});
+map.addLayer( {
+    'id': 'text',
+    'type': 'symbol',
+    'source':
+    {
+    <!--type:'geojson',-->
+    <!--url: './chron2.geojson',-->
+    type: 'vector',
+    url: 'mapbox://laurenmcm749.7e2zj3oa'
+    },
+
+'source-layer': 'chron2_-_Sheet1_1-7k1xxa',
+});
+});
+
+ document.getElementById('slider').addEventListener('input', function(e) {
+
+  var sliderDisplay = parseInt(e.target.value);
+  //TODO: access these dates from database
+  var my_dates = ["7/8/2019","7/9/2019","7/10/2019"];
+  var displayDate = my_dates[sliderDisplay-1];
+  document.getElementById('active-date').innerText = displayDate;
+  map.setFilter('event', ['==', ['number', ['get', 'entry']], sliderDisplay]);
+  map.setFilter('text', ['==', ['number', ['get', 'entry']], sliderDisplay]);
+
+
+});
+
+
+</script>
+</body>
+
+
+ <!-- //TODO: Automate date entry and/or turn it to date format, not string
+ //TODO: Icon for slider bubble
+  // Notes
+
+   //document represent HTML page, so finding elements in it
+  //element.addEventListener(event, function, useCapture) e=event
+  //The target event property returns the element that triggered the event.
+  //parseInt() function parses a string and returns an integer.
+  //By adding a == expression as a filter with the structure "filter": ['==', ['type',['get', 'key']],'value'],
+   // you can single out all features where the 'key' is equal to the 'value' of the specified type.-->

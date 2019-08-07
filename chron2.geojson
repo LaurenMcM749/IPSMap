@@ -1,0 +1,113 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.2621,32.2227 ]
+    },
+    "properties": {
+    "date":"2019-07-08",
+    "event":"arrest_adult",
+    "num":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.2137,31.7683 ]
+    },
+    "properties": {
+    "date":"2019-07-08",
+    "event":"arrest_child",
+    "num":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.0998,31.5326 ]
+    },
+    "properties": {
+    "date":"2019-07-08",
+    "event":"death_adult",
+    "num":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.2721,32.2235 ]
+    },
+    "properties": {
+    "date":"2019-07-09",
+    "event":"death_child",
+    "num":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.2237,31.7653 ]
+    },
+    "properties": {
+    "date":"2019-07-09",
+    "event":"settlement_new",
+    "num":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.0999,31.5327 ]
+    },
+    "properties": {
+    "date":"2019-07-09",
+    "event":"demolition",
+    "num":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.2771,32.2435 ]
+    },
+    "properties": {
+    "date":"2019-07-09",
+    "event":"settler_violence_agri",
+    "num":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.2135,31.7684 ]
+    },
+    "properties": {
+    "date":"2019-07-10",
+    "event":"settler_violence_prop",
+    "num":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.0996,31.6326 ]
+    },
+    "properties": {
+    "date":"2019-07-10",
+    "event":"settler_violence_phys",
+    "num":3
+    }
+  }
+]
+}
