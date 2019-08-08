@@ -100,7 +100,7 @@ map.addLayer( {
 
   var sliderDisplay = parseInt(e.target.value);
   //TODO: access these dates from database
-  var my_dates = ["7/8/2019","7/9/2019","7/10/2019"];
+  var my_dates = ["7/8/2019","7/9/2019","7/10/2019","8/8/2019"];
   var displayDate = my_dates[sliderDisplay-1];
   document.getElementById('active-date').innerText = displayDate;
   map.setFilter('event', ['==', ['number', ['get', 'entry']], sliderDisplay]);
